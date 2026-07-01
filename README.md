@@ -37,9 +37,13 @@ Ad 192.168.69.1 \
 Net 255.255.255.0 \
 Gate - 
 
+plug USB wifi
+connect to (any)
+reboot
+
 ### Creat new wifi hotspot
-adapter Realtek \
-connection New \
+adapter Broadcom \
+(connection New) \
 name QS \
 security 2 Personal \
 pass ;) 
