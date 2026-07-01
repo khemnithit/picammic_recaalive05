@@ -45,7 +45,7 @@ security 2 Personal \
 pass ;) 
 
 ### Edit QS
-Connect auto with priority 0 \
+Connect auto with priority 0 
 
 ```
 cd \
