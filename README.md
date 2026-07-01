@@ -9,7 +9,7 @@ cd \
 && wget https://github.com/bluenviron/mediamtx/releases/download/v1.19.2/mediamtx_v1.19.2_linux_arm64.tar.gz \
 && tar -xvzf mediamtx_v1.19.2_linux_arm64.tar.gz \
 && mv mediamtx.yml mm.yml \
-&& wget -O mediamtx.yml https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/pi0m.yml
+&& wget -O mediamtx.yml https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/pi0m.yml \
 && wget https://github.com/9001/copyparty/releases/latest/download/copyparty-sfx.py \
 && sudo apt install ffmpeg \
 && sudo nmcli connection modify "preconfigured" \
@@ -52,9 +52,9 @@ cd \
 && wget https://github.com/bluenviron/mediamtx/releases/download/v1.19.2/mediamtx_v1.19.2_linux_arm64.tar.gz \
 && tar -xvzf mediamtx_v1.19.2_linux_arm64.tar.gz \
 && mv mediamtx.yml mm.yml \
-&& wget -O mediamtx.yml https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/pi5m.yml
+&& wget -O mediamtx.yml https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/pi5m.yml \
 && wget https://github.com/9001/copyparty/releases/latest/download/copyparty-sfx.py \
-&& sudo apt install ffmpeg \
+&& sudo apt install ffmpeg
 ```
 
 sudo reboot
