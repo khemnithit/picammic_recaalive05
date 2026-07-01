@@ -37,8 +37,9 @@ Ad 192.168.69.1 \
 Net 255.255.255.0 \
 Gate - 
 
-plug USB wifi
-connect to (any)
+turn off BT \
+plug USB wifi \
+connect to (any) \
 reboot
 
 ### Creat new wifi hotspot
