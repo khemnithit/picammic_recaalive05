@@ -1,8 +1,8 @@
 # Raspberry Pi Zero 2 W
 
-OS Bookworm 64-bit Lite
-Wifi preconfigured (QS)
-SSH
+OS Bookworm 64-bit Lite \
+Wifi preconfigured (QS) \
+SSH \
 
 ```
 cd \
@@ -24,28 +24,28 @@ sudo reboot
 
 # Raspberry Pi 5
 
-OS Bookworm 64-bit (NOT Full/Lite)
-Wifi preconfigured (any)
-SSH (+VNC)
-sudo raspi-config
-Interface Options > VNC
+OS Bookworm 64-bit (NOT Full/Lite) \
+Wifi preconfigured (any) \
+SSH (+VNC) \
+sudo raspi-config \
+Interface Options > VNC \
 
 ### Edit Wired connection 1
-Connect auto with priority 0
-IPv4 Manual
-Ad 192.168.69.1
-Net 255.255.255.0
-Gate -
+Connect auto with priority 0 \
+IPv4 Manual \
+Ad 192.168.69.1 \
+Net 255.255.255.0 \
+Gate - \
 
 ### Creat new wifi hotspot
-adapter Realtek
-connection New
-name QS
-security 2 Personal
-pass ;)
+adapter Realtek \
+connection New \
+name QS \
+security 2 Personal \
+pass ;) \
 
 ### Edit QS
-Connect auto with priority 0
+Connect auto with priority 0 \
 
 ```
 cd \
@@ -61,8 +61,8 @@ sudo reboot
 
 
 ## Note on Pi 5
-ssh k@10.42.0.67 ./mediamtx
-./mediamtx
-(python copyparty-sfx.py)
-gg sheets
-yt studio
+ssh k@10.42.0.67 ./mediamtx \
+./mediamtx \
+(python copyparty-sfx.py) \
+gg sheets \
+yt studio \
