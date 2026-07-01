@@ -16,11 +16,11 @@ paths:
 # Autofocus mode (auto, manual or continuous)
 #    rpiCameraAfMode: continuous
 
-    # Lens position (for manual autofocus only), will be set to focus to a specific distance
-    # calculated by the following formula: d = 1 / value
-    # Examples: 0 moves the lens to infinity
-    #           0.5 moves the lens to focus on objects 2m away
-    #           2 moves the lens to focus on objects 50cm away
+# Lens position (for manual autofocus only), will be set to focus to a specific distance
+# calculated by the following formula: d = 1 / value
+# 0 moves the lens to infinity
+# 0.5 moves the lens to focus on objects 2m away
+# 2 moves the lens to focus on objects 50cm away
 #    rpiCameraLensPosition: 0.0
 
   audio:
