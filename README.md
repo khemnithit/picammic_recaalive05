@@ -37,6 +37,22 @@ Ad 192.168.69.1 \
 Net 255.255.255.0 \
 Gate - 
 
+```
+alternative
+turn off BT \
+plug USB wifi \
+
+Creat new wifi hotspot
+adapter TP-Link \
+(connection New) \
+name QS \
+security 2 Personal \
+pass ;) 
+
+Edit QS
+Connect auto with priority 1 
+```
+
 turn off BT \
 plug USB wifi \
 connect to (any) \
