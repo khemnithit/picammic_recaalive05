@@ -31,7 +31,7 @@ sudo raspi-config \
 Interface Options > VNC 
 
 ### Edit Wired connection 1
-Connect auto with priority 0 \
+Connect auto with priority 1? \
 IPv4 Manual \
 Ad 192.168.69.1 \
 Net 255.255.255.0 \
@@ -50,7 +50,7 @@ security 2 Personal \
 pass ;) 
 
 ### Edit QS
-Connect auto with priority 0 
+Connect auto with priority 1 
 
 ```
 cd \
