@@ -2,7 +2,7 @@
 
 OS Bookworm 64-bit Lite \
 Wifi preconfigured (QS) \
-SSH \
+SSH 
 
 ```
 cd \
@@ -28,21 +28,21 @@ OS Bookworm 64-bit (NOT Full/Lite) \
 Wifi preconfigured (any) \
 SSH (+VNC) \
 sudo raspi-config \
-Interface Options > VNC \
+Interface Options > VNC 
 
 ### Edit Wired connection 1
 Connect auto with priority 0 \
 IPv4 Manual \
 Ad 192.168.69.1 \
 Net 255.255.255.0 \
-Gate - \
+Gate - 
 
 ### Creat new wifi hotspot
 adapter Realtek \
 connection New \
 name QS \
 security 2 Personal \
-pass ;) \
+pass ;) 
 
 ### Edit QS
 Connect auto with priority 0 \
@@ -65,4 +65,4 @@ ssh k@10.42.0.67 ./mediamtx \
 ./mediamtx \
 (python copyparty-sfx.py) \
 gg sheets \
-yt studio \
+yt studio 
