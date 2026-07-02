@@ -46,7 +46,8 @@ sudo reboot
 ssh k@10.42.0.67 ./mediamtx \
 (python copyparty-sfx.py) \
 gg sheets \
-yt studio 
+yt studio \
+arecord -L
 
 
 
