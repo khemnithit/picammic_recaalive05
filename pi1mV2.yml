@@ -1,0 +1,13 @@
+paths:
+  rec:
+    source: rtsp://192.168.:8554/qs
+    
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 4d
+    
