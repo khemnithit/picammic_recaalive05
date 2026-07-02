@@ -1,0 +1,74 @@
+paths:
+  cam:
+    source: rpiCamera
+    rpiCameraWidth: 1280
+    rpiCameraHeight: 720
+    rpiCameraBitrate: 2000000
+
+# Brightness [-1, 1]
+#    rpiCameraBrightness: 0
+# Contrast [0, 16]
+#    rpiCameraContrast: 1
+    
+# Region of interest, in format x,y,width,height (all normalized between 0 and 1)
+#    rpiCameraROI:
+
+# Autofocus mode (auto, manual or continuous)
+#    rpiCameraAfMode: continuous
+
+# Lens position (for manual autofocus only), will be set to focus to a specific distance
+# calculated by the following formula: d = 1 / value
+# 0 moves the lens to infinity
+# 0.5 moves the lens to focus on objects 2m away
+# 2 moves the lens to focus on objects 50cm away
+#    rpiCameraLensPosition: 0.0
+
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 8d
+
+  audio:
+    runOnInit: >
+      ffmpeg -f alsa -i default:CARD=Blink500B2 -c:a aac
+      -f rtsp rtsp://127.0.0.1:8554/audio
+    runOnInitRestart: yes
+
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 8d
+
+  qs:
+    runOnInit: >
+      ffmpeg -fflags nobuffer -flags low_delay
+      -probesize 32 -analyzeduration 0
+      -i rtsp://127.0.0.1:8554/cam
+      -f alsa -i default:CARD=Blink500B2
+      -c:v copy -c:a aac
+      -f rtsp rtsp://127.0.0.1:8554/qs
+    runOnInitRestart: yes
+
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 8d
+
+  yt:
+    runOnInit: >
+      ffmpeg -i rtsp://127.0.0.1:8554/qs
+      -c copy
+      -f flv
+    runOnInitRestart: yes
