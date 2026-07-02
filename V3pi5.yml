@@ -49,8 +49,7 @@ paths:
 
   qs:
     runOnInit: >
-      ffmpeg -fflags nobuffer -flags low_delay
-      -probesize 32 -analyzeduration 0
+      ffmpeg -fflags nobuffer
       -i rtsp://127.0.0.1:8554/cam
       -f alsa -i default:CARD=Blink500B2
       -c:v copy -c:a aac
