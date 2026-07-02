@@ -1,0 +1,16 @@
+paths:
+  rec:
+    source: rtsp://10.42.0.1:8554/qs
+    alwaysAvailable: true
+    alwaysAvailableTracks:
+      - codec: H264
+
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 6d
+    
