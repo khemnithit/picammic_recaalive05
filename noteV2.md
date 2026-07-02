@@ -32,3 +32,12 @@ ssh k@192.168. ./mediamtx \
 (python copyparty-sfx.py) \
 gg sheets \
 yt studio 
+
+
+# Raspberry Pi 1
+```
+cd \
+&& wget https://github.com/bluenviron/mediamtx/releases/download/v1.19.2/mediamtx_v1.19.2_linux_armv7.tar.gz \
+&& tar -xvzf mediamtx_v1.19.2_linux_armv7.tar.gz \
+&& mv mediamtx.yml mm.yml \
+```
