@@ -16,7 +16,7 @@ paths:
 
   recaudio:
     runOnInit: >
-      ffmpeg -f alsa -i sysdefault:CARD=Blink500B2 -c:a aac
+      ffmpeg -f alsa -i plughw:CARD=Blink500B2,DEV=0 -c:a aac
       -f rtsp rtsp://127.0.0.1:8554/audio
     runOnInitRestart: yes
 
