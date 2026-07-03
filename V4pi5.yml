@@ -1,0 +1,31 @@
+paths:
+  reccam:
+    source: whep://192.168.0.69:8889/cam/whep
+    alwaysAvailable: true
+    alwaysAvailableTracks:
+      - codec: H264
+
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 8d
+
+  recaudio:
+    runOnInit: >
+      ffmpeg -f alsa -i sysdefault:CARD=Blink500B2 -c:a aac
+      -f rtsp rtsp://127.0.0.1:8554/audio
+    runOnInitRestart: yes
+
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 8d
+    
