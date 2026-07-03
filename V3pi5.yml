@@ -34,7 +34,7 @@ paths:
 
   audio:
     runOnInit: >
-      ffmpeg -f alsa -i default:CARD=Blink500B2 -c:a aac
+      ffmpeg -f alsa -i sysdefault:CARD=Blink500B2 -c:a aac
       -f rtsp rtsp://127.0.0.1:8554/audio
     runOnInitRestart: yes
 
@@ -51,7 +51,7 @@ paths:
     runOnInit: >
       ffmpeg -fflags nobuffer
       -i rtsp://127.0.0.1:8554/cam
-      -f alsa -i default:CARD=Blink500B2
+      -f alsa -i sysdefault:CARD=Blink500B2
       -c:v copy -c:a aac
       -f rtsp rtsp://127.0.0.1:8554/qs
     runOnInitRestart: yes
@@ -69,5 +69,5 @@ paths:
     runOnInit: >
       ffmpeg -i rtsp://127.0.0.1:8554/qs
       -c copy
-      -f flv
+      -f flv !
     runOnInitRestart: yes
