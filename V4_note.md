@@ -31,6 +31,16 @@ cd \
 nano yt720.sh \
 sudo reboot
 
+## Note on Pi 5
+./mediamtx \
+./yt720.sh \
+ssh k@192.168.0.101 ./mediamtx \
+(python copyparty-sfx.py) \
+gg sheets \
+yt studio \
+arecord -L
+
+
 # Raspberry Pi Zero 2 W
 
 OS Bookworm 64-bit Lite \
