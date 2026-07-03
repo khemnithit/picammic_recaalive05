@@ -1,8 +1,8 @@
 # Raspberry Pi 5
 
 OS Bookworm 64-bit (NOT Full/Lite) \
-Wifi preconfigured (any) \
-SSH (+X11 +VNC) \
+Wifi preconfigured (nano) \
+SSH (+X11 +VNC) 
 
 sudo raspi-config \
 Advanced Options > Wayland \
