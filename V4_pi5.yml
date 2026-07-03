@@ -1,6 +1,6 @@
 paths:
   reccam:
-    source: whep://192.168.0.102:8889/cam/whep
+    source: whep://192.168.0.101:8889/cam/whep
     alwaysAvailable: true
     alwaysAvailableTracks:
       - codec: H264
