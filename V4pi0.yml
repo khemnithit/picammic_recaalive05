@@ -1,0 +1,28 @@
+paths:
+  cam:
+    source: rpiCamera
+    rpiCameraBitrate: 6000000
+
+# Brightness [-1, 1]
+#    rpiCameraBrightness: 0
+# Contrast [0, 16]
+#    rpiCameraContrast: 1
+
+# Autofocus mode (auto, manual or continuous)
+#    rpiCameraAfMode: continuous
+
+# Lens position (for manual autofocus only), will be set to focus to a specific distance
+# calculated by the following formula: d = 1 / value
+# 0 moves the lens to infinity
+# 0.5 moves the lens to focus on objects 2m away
+# 2 moves the lens to focus on objects 50cm away
+#    rpiCameraLensPosition: 0.0
+
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 5d
