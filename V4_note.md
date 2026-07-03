@@ -26,6 +26,7 @@ cd \
 && wget -O mediamtx.yml https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/V4_pi5.yml \
 && wget -O yt720.sh https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/V4_ffyt.sh \
 && chmod +x yt720.sh \
+&& wget https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/720.jpg \
 && wget https://github.com/9001/copyparty/releases/latest/download/copyparty-sfx.py 
 ```
 nano yt720.sh \
