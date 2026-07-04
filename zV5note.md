@@ -23,7 +23,7 @@ cd \
 && wget https://github.com/bluenviron/mediamtx/releases/download/v1.19.2/mediamtx_v1.19.2_linux_arm64.tar.gz \
 && tar -xvzf mediamtx_v1.19.2_linux_arm64.tar.gz \
 && mv mediamtx.yml mm.yml \
-&& wget -O mediamtx.yml
+&& wget -O mediamtx.yml https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/zV5pi5.yml \
 && wget https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/720.jpg \
 && wget https://github.com/9001/copyparty/releases/latest/download/copyparty-sfx.py 
 ```
@@ -53,7 +53,7 @@ cd \
 && wget https://github.com/bluenviron/mediamtx/releases/download/v1.19.2/mediamtx_v1.19.2_linux_arm64.tar.gz \
 && tar -xvzf mediamtx_v1.19.2_linux_arm64.tar.gz \
 && mv mediamtx.yml mm.yml \
-&& wget -O mediamtx.yml
+&& wget -O mediamtx.yml https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/zV5pi0.yml \
 && wget https://github.com/9001/copyparty/releases/latest/download/copyparty-sfx.py \
 ```
 
