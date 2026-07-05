@@ -1,6 +1,6 @@
 paths:
   rec:
-    source: rtsp://192.168.0.101:8554/qs
+    source: rtsp://192.168.0.100:8554/qs
     alwaysAvailable: true
     alwaysAvailableTracks:
       - codec: H264
