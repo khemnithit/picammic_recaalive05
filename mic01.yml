@@ -1,0 +1,17 @@
+paths:
+  mic:
+    runOnInit: >
+      ffmpeg -f pulse -i 78 
+      -c:a aac
+      -f rtsp rtsp://127.0.0.1:8554/mic
+    runOnInitRestart: yes
+
+    record: true
+    recordPath: ./recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+    recordFormat: fmp4
+
+    recordPartDuration: 1s
+    recordMaxPartSize: 50M
+    recordSegmentDuration: 1h
+    recordDeleteAfter: 8d
+    
