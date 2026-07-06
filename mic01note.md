@@ -6,13 +6,6 @@ SSH (+VNC) \
 sudo raspi-config \
 Interface Options > VNC 
 
-### Edit Wired connection 1
-Connect auto with priority 1? \
-IPv4 Manual \
-Ad 192.168.69.1 \
-Net 255.255.255.0 \
-Gate - 
-
 turn off BT \
 plug USB wifi \
 connect to (any) \
@@ -33,9 +26,9 @@ cd \
 && wget https://github.com/bluenviron/mediamtx/releases/download/v1.19.2/mediamtx_v1.19.2_linux_arm64.tar.gz \
 && tar -xvzf mediamtx_v1.19.2_linux_arm64.tar.gz \
 && mv mediamtx.yml mm.yml \
-&& wget -O mediamtx.yml 
+&& wget -O mediamtx.yml https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/mic01.yml \
 && wget https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/grey1080.png \
-&& wget -O yt.sh 
+&& wget -O yt.sh https://raw.githubusercontent.com/khemnithit/picammic_recaalive05/refs/heads/main/mic01.sh \
 && chmod +x yt.sh \
 && wget https://github.com/9001/copyparty/releases/latest/download/copyparty-sfx.py
 ```
